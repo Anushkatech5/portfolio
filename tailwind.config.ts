@@ -8,10 +8,24 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        // purple: {
+        //   DEFAULT: '#6a0dad',  // Default purple
+        //   50: '#f5e8ff',       // Very light purple (almost white)
+        //   100: '#e0b3ff',      // Light purple
+        //   200: '#c580ff',      // Lighter purple
+        //   300: '#a64cff',      // Medium light purple
+        //   400: '#8720e1',      // Medium purple
+        //   500: '#6a0dad',      // Default purple
+        //   600: '#580a99',      // Darker purple
+        //   700: '#450783',      // Even darker purple
+        //   800: '#340566',      // Very dark purple
+        //   900: '#24034a',      // Deepest purple
+        // },
+        black: {
+         DEFAULT: '#000',
+         100: '#000319' 
+        }
       },
     },
   },
