@@ -1,16 +1,17 @@
+"use client";
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 
 // Also install this npm i --save-dev @types/react-lottie
 import Lottie from "react-lottie";
 
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils/cn";
 
 
-import { BackgroundGradientAnimation } from "./GradientBg";
-import GridGlobe from "./GridGlobe";
+import { BackgroundGradientAnimation } from "@/components/ui/GradientBg";
+import  GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
-import MagicButton from "../MagicButton";
+import MagicButton from "@/components/MagicButton";
 
 export const BentoGrid = ({
   className,
@@ -67,7 +68,7 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "hsu@jsmastery.pro";
+    const text = "guptaanushka024@gmail.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
@@ -105,7 +106,6 @@ export const BentoGridItem = ({
             <img
               src={spareImg}
               alt={spareImg}
-              //   width={220}
               className="object-cover object-center w-full h-full"
             />
           )}
@@ -127,8 +127,6 @@ export const BentoGridItem = ({
           <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
             {description}
           </div>
-          {/* add text-3xl max-w-96 , remove text-neutral-600 dark:text-neutral-300*/}
-          {/* remove mb-2 mt-2 */}
           <div
             className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
           >

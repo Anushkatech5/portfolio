@@ -1,4 +1,4 @@
-import MagicButton from './ui/MagicButton';
+import MagicButton from './MagicButton';
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenerateEffect';
 import { FaLocationArrow } from 'react-icons/fa';
