@@ -1,3 +1,5 @@
+/* globals.css */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -86,4 +88,71 @@
   .black-gradient {
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
   }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .experience-section {
+    margin-top: -20px; /* Adjust this value to move the section up */
+    padding-bottom: 20px; /* Ensure there’s some spacing at the bottom if needed */
+  }
+
+  .scrollable-cards {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    padding-top: 40px; /* Add padding at the top of the cards container */
+  }
+
+  .scrollable-cards > * {
+    flex: 0 0 auto; /* Ensure cards don't shrink */
+    scroll-snap-align: start;
+    margin-right: 16px; /* Adjust spacing between cards */
+  }
+
+  .scrollable-cards::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+  }
+
+  .timeline-container {
+    padding: 20px;
+    border-left: 2px solid var(--purple);
+  }
+  
+  .timeline-item {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .timeline-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .timeline-content {
+    margin-left: 20px;
+    padding-left: 10px;
+    border-left: 2px solid var(--neutral-400);
+    position: relative;
+  }
+  
+  .timeline-content::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: var(--purple);
+    border-radius: 50%;
+    position: absolute;
+    left: -16px;
+    top: 5px;
+  }
+  
 }

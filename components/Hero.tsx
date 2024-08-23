@@ -1,3 +1,4 @@
+"use client";
 import MagicButton from './MagicButton';
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenerateEffect';
