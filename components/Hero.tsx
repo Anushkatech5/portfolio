@@ -1,6 +1,6 @@
 "use client";
 import MagicButton from './MagicButton';
-import { Spotlight } from './ui/Spotlight'
+import { Spotlight } from './ui/Spotlight';
 import { TextGenerateEffect } from './ui/TextGenerateEffect';
 import { FaLocationArrow } from 'react-icons/fa';
 
@@ -20,29 +20,38 @@ const Hero = () => {
 
       <div className='flex justify-center relative my-20 z-10'>
         <div className='max-w-[89vw] md:max-w2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
-            <h2 className='uppercase tracking-widest text-xs text-center text-blue-100 max-w-80'>
-              Dynamic Web Magic with Next.js
-            </h2>
+          <h2 className='uppercase tracking-widest text-xs text-center text-blue-100 max-w-80'>
+            Passionate About AI, Empowering Future Solutions
+          </h2>
 
-            <TextGenerateEffect 
+          <TextGenerateEffect 
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
-            words="Transforming Concepts into Seamless Experiences"
-            />
+            words="Transforming Innovation into Reality"
+          />
 
-            <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
-              Hi! I&apos;m Anushka, an Artificial Intelligence student based in India.
-            </p>
-            <a href="#about">
-              <MagicButton
-                title="Show my work"
-                icon={<FaLocationArrow />}
-                position='right'
-              />
-            </a>
+          <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
+            Hi! I&apos;m Anushka, a dedicated AI developer and enthusiast, eager to create impactful technological solutions.
+          </p>
+
+          <a href="https://github.com/Anushkatech5" target="_blank" rel="noopener noreferrer">
+            <MagicButton
+              title="Show my work"
+              icon={<FaLocationArrow />}
+              position='right'
+            />
+          </a>
+
+          {/* <a href="/Anushka Resume.pdf" target="_blank" rel="noopener noreferrer">
+            <MagicButton
+              title="Download my resume"
+              icon={<FaLocationArrow />}
+              position='right'
+            />
+          </a> */}
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

@@ -154,5 +154,77 @@
     left: -16px;
     top: 5px;
   }
+
+  .resume-section {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .resume-section img {
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .resume-section img:hover {
+    transform: scale(1.05);
+  }
+  
+  .download-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 2px solid #000; /* Adjust based on your theme */
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000; /* Adjust based on your theme */
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .download-button:hover {
+    background-color: #000; /* Adjust based on your theme */
+    color: #fff; /* Adjust based on your theme */
+  }
+  
+  .bento-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .bento-grid-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .bento-grid-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .bento-grid-item-image {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .bento-grid-item-title {
+    font-size: 1.25rem;
+    margin: 10px 0;
+  }
+  
+  .bento-grid-item-description {
+    font-size: 1rem;
+    color: #666;
+  }
+
+  .bg-darkBlue {
+    background-color: #0a1a36; /* Dark blue color */
+  }
+  
   
 }

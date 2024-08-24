@@ -1,4 +1,3 @@
-// app/page.tsx
 "use client";
 
 import { navItems } from "@/data";
@@ -9,6 +8,7 @@ import Experience from "@/components/Experience";
 import { TimelineDemo } from "@/components/Education";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNav";
+import ResumeImage from "@/components/ui/ResumeImage";
 
 const Home = () => {
   return (
@@ -20,6 +20,7 @@ const Home = () => {
         <RecentProjects />
         <Experience />
         <TimelineDemo /> 
+        <ResumeImage />
         <Footer />
       </div>
     </main>
