@@ -133,7 +133,7 @@ export const BentoGridItem = ({
             >
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
                 <span className="lg:py-4 lg:px-3 py-2 px-3 rounded-lg text-center bg-[#10132E]">
-                  My Tech Stack
+                Click here to see <br />Anushka&apos;s Tech Stack
                 </span>
               </div>
             </div>
@@ -163,27 +163,29 @@ export const BentoGridItem = ({
       {/* Pop-up Tech Stack Grid */}
       {isOpen && (
         <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 z-50">
-          <div className="relative bg-[#10132E] rounded-lg p-5 w-full max-w-4xl overflow-auto">
+          <div className="relative bg-[#10132E] rounded-lg p-5 w-full max-w-4xl">
             <button
               onClick={() => setIsOpen(false)}
               className="absolute top-2 right-2 text-white text-2xl"
             >
               &times;
             </button>
-            <div className="grid grid-cols-6 gap-4">
-              {techStack.map((tech, index) => (
-                <div
-                  key={index}
-                  className="flex flex-col items-center justify-center p-3 bg-gray-800 rounded-lg"
-                >
-                  <img
-                    src={tech.imgSrc}
-                    alt={tech.name}
-                    className="h-12 w-12 mb-2"
-                  />
-                  <span className="text-white text-xs">{tech.name}</span>
-                </div>
-              ))}
+            <div className="max-h-80 overflow-y-auto">
+              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                {techStack.map((tech, index) => (
+                  <div
+                    key={index}
+                    className="flex flex-col items-center justify-center p-3 bg-gray-800 rounded-lg"
+                  >
+                    <img
+                      src={tech.imgSrc}
+                      alt={tech.name}
+                      className="h-12 w-12 mb-2"
+                    />
+                    <span className="text-white text-xs">{tech.name}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
