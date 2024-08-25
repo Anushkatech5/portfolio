@@ -225,6 +225,26 @@
   .bg-darkBlue {
     background-color: #0a1a36; /* Dark blue color */
   }
+
+  .scrollable-container::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .scrollable-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  
+  .scrollable-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  .scrollable-container {
+    scroll-behavior: smooth; /* Enables smooth scrolling for supported browsers */
+    transform: translateZ(0);
+    max-height: 20rem; /* Adjust this value as needed */
+    overflow-y: auto;
+  }
   
   
 }
