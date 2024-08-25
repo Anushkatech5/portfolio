@@ -12,7 +12,7 @@ const Footer = () => {
           Ready to take <span className="text-purple">your</span> digital
           presence to the next level?
         </h1>
-        <p className="text-neutral-700 md:mt-8 my-4 text-center text-sm md:text-base">
+        <p className="text-white-100 md:mt-8 my-4 text-center text-sm md:text-base">
           Reach out to me today and let's discuss how I can help you achieve your goals.
         </p>
         <a href="mailto:guptaanushka024@gmail.com">
@@ -30,12 +30,15 @@ const Footer = () => {
 
         <div className="flex items-center md:gap-2 gap-4">
           {socialMedia.map((profile) => (
-            <div
+            <a
               key={profile.id}
+              href={profile.link}
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-8 h-8 cursor-pointer flex justify-center items-center saturate-180 bg-opacity-75 bg-black-100 rounded-lg border border-neutral-300"
             >
               <img src={profile.img} alt={profile.id} width={16} height={16} />
-            </div>
+            </a>
           ))}
         </div>
       </div>

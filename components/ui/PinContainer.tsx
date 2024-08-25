@@ -1,26 +1,26 @@
-"use client";
 import React from "react";
-import { PinContainer } from "./3d-pin";
 
-export function AnimatedPinDemo() {
-  return (
-    <div className="h-[40rem] w-full flex items-center justify-center ">
-      <PinContainer
-        title="/ui.aceternity.com"
-        href="https://twitter.com/mannupaaji"
-      >
-        <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
-          <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
-            Aceternity UI
-          </h3>
-          <div className="text-base !m-0 !p-0 font-normal">
-            <span className="text-slate-500 ">
-              Customizable Tailwind CSS and Framer Motion Components.
-            </span>
-          </div>
-          <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
-        </div>
-      </PinContainer>
-    </div>
-  );
+interface PinContainerProps {
+  title: string;
+  link: string;
+  children: React.ReactNode;
 }
+
+const PinContainer: React.FC<PinContainerProps> = ({ title, link, children }) => {
+  return (
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block relative p-4 bg-gray-800 rounded-lg shadow-lg transition-transform transform hover:scale-105"
+      style={{ textDecoration: 'none', color: 'inherit', display: 'block', position: 'relative' }}
+    >
+      <div className="relative p-4">
+        {children}
+        <h3 className="text-white font-bold text-lg mt-2">{title}</h3>
+      </div>
+    </a>
+  );
+};
+
+export default PinContainer;

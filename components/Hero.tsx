@@ -33,13 +33,26 @@ const Hero = () => {
             Hi! I&apos;m Anushka, a dedicated AI developer and enthusiast, eager to create impactful technological solutions.
           </p>
 
-          <a href="https://github.com/Anushkatech5" target="_blank" rel="noopener noreferrer">
+          <a
+  href="https://github.com/Anushkatech5"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <MagicButton
+    title="Show my work"
+    icon={<FaLocationArrow />}
+    position="right"
+    showIconOnHover={true} // Apply hover effect
+  />
+</a>
+
+          {/* <a href="https://github.com/Anushkatech5" target="_blank" rel="noopener noreferrer">
             <MagicButton
               title="Show my work"
               icon={<FaLocationArrow />}
               position='right'
             />
-          </a>
+          </a> */}
 
           {/* <a href="/Anushka Resume.pdf" target="_blank" rel="noopener noreferrer">
             <MagicButton

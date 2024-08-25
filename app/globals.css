@@ -245,6 +245,22 @@
     max-height: 20rem; /* Adjust this value as needed */
     overflow-y: auto;
   }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    grid-auto-rows: auto; /* Automatically adjust row height */
+    gap: 1rem; /* Space between the cards */
+  }
+  
+  .card {
+    border: 2px solid #e7e7e7;
+    border-radius: 4px;
+    padding: 0.5rem;
+  }
+  
+  
+  
   
   
 }

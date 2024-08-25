@@ -213,18 +213,15 @@ export const workExperience = [
 
 export const socialMedia = [
   {
-    id: 'linkedin',
-    img: '/linkedin.svg',
-    link: 'https://www.linkedin.com/in/anushka5/',
+    id: 1,
+    img: "/git.svg",
   },
   {
-    id: 'leetcode',
-    img: '/leetcode-white.svg',
-    link: 'https://leetcode.com/u/Anushka57/',
+    id: 2,
+    img: "/twit.svg",
   },
   {
-    id: 'github',
-    img: '/git.svg',
-    link: 'https://github.com/Anushkatech5',
+    id: 3,
+    img: "/link.svg",
   },
 ];

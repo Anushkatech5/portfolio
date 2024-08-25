@@ -133,7 +133,7 @@ export const BentoGridItem = ({
             >
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
                 <span className="lg:py-4 lg:px-3 py-2 px-3 rounded-lg text-center bg-[#10132E]">
-                Click here to see <br />Anushka&apos;s Tech Stack
+                Click here to see <br />Anushka&apos;s Tech Stack      
                 </span>
               </div>
             </div>
@@ -149,12 +149,14 @@ export const BentoGridItem = ({
               </div>
 
               <MagicButton
-                title={copied ? "Email is Copied!" : "Copy my email address"}
-                icon={<IoCopyOutline />}
-                position="left"
-                handleClick={handleCopy}
-                otherClasses="!bg-[#161A31]"
-              />
+  title={copied ? "Email is Copied!" : "Copy my email address"}
+  icon={<IoCopyOutline />}
+  position="left"
+  handleClick={handleCopy}
+  otherClasses="!bg-[#161A31]"
+  showIconOnHover={false} // No hover effects
+/>
+
             </div>
           )}
         </div>

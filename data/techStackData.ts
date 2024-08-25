@@ -1,49 +1,50 @@
 export const techStack = [
-  { name: "React", imgSrc: "/images/react.png" },
-  { name: "Angular", imgSrc: "/images/angular.png" },
-  { name: "Vue", imgSrc: "/images/vue.png" },
-  { name: "Node.js", imgSrc: "/images/nodejs.png" },
-  { name: "Python", imgSrc: "/images/python.png" },
-  { name: "JavaScript", imgSrc: "/images/javascript.png" },
-  { name: "TypeScript", imgSrc: "/images/typescript.png" },
-  { name: "CSS", imgSrc: "/images/css.png" },
-  { name: "HTML", imgSrc: "/images/html.png" },
-  { name: "Java", imgSrc: "/images/java.png" },
-  { name: "PHP", imgSrc: "/images/php.png" },
-  { name: "Ruby", imgSrc: "/images/ruby.png" },
-  { name: "GraphQL", imgSrc: "/images/graphql.png" },
-  { name: "Docker", imgSrc: "/images/docker.png" },
-  { name: "Kubernetes", imgSrc: "/images/kubernetes.png" },
-  { name: "MongoDB", imgSrc: "/images/mongodb.png" },
-  { name: "MySQL", imgSrc: "/images/mysql.png" },
-  { name: "PostgreSQL", imgSrc: "/images/postgresql.png" },
-  { name: "Redis", imgSrc: "/images/redis.png" },
-  { name: "Firebase", imgSrc: "/images/firebase.png" },
-  { name: "AWS", imgSrc: "/images/aws.png" },
-  { name: "GCP", imgSrc: "/images/gcp.png" },
-  { name: "Azure", imgSrc: "/images/azure.png" },
-  { name: "TensorFlow", imgSrc: "/images/tensorflow.png" },
-  { name: "PyTorch", imgSrc: "/images/pytorch.png" },
-  { name: "Flutter", imgSrc: "/images/flutter.png" },
-  { name: "Django", imgSrc: "/images/django.png" },
-  { name: "Spring", imgSrc: "/images/spring.png" },
-  { name: "Laravel", imgSrc: "/images/laravel.png" },
-  { name: "Sass", imgSrc: "/images/sass.png" },
-  { name: "Bootstrap", imgSrc: "/images/bootstrap.png" },
-  { name: "TailwindCSS", imgSrc: "/images/tailwindcss.png" },
-  { name: "Vite", imgSrc: "/images/vite.png" },
-  { name: "Webpack", imgSrc: "/images/webpack.png" },
-  { name: "Git", imgSrc: "/images/git.png" },
-  { name: "GitHub", imgSrc: "/images/github.png" },
-  { name: "GitLab", imgSrc: "/images/gitlab.png" },
-  { name: "Bitbucket", imgSrc: "/images/bitbucket.png" },
-  { name: "Vim", imgSrc: "/images/vim.png" },
-  { name: "VS Code", imgSrc: "/images/vscode.png" },
-  { name: "Sublime Text", imgSrc: "/images/sublime.png" },
-  { name: "Photoshop", imgSrc: "/images/photoshop.png" },
-  { name: "Figma", imgSrc: "/images/figma.png" },
-  { name: "Wix", imgSrc: "/images/wix.png" },
-  { name: "Filebase", imgSrc: "/images/filebase.png" },
+  // Programming Languages
+  { name: "Python ", imgSrc: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg", link: "https://www.python.org/" },
+  { name: "C", imgSrc: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/c-colored.svg", link: "https://docs.microsoft.com/en-us/cpp/?view=msvc-170" },
+  { name: "Java", imgSrc: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/java-colored.svg", link: "https://www.oracle.com/java/" },
+  { name: "Dart", imgSrc: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/dart-colored.svg", link: "https://dart.dev/" },  
+  { name: "JavaScript", imgSrc: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg", link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },  
+  { name: "HTML5", imgSrc: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg", link: "https://developer.mozilla.org/en-US/docs/Glossary/HTML5" },
+
+  // Frameworks and Libraries
+  { name: "React", imgSrc: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg", link: "https://reactjs.org/" },
+  { name: "Next.js", imgSrc: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nextjs-colored.svg", link: "https://nextjs.org/docs" },
+  { name: "TailwindCSS", imgSrc: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg", link: "https://tailwindcss.com/" },
+  { name: "Bootstrap", imgSrc: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/bootstrap-colored.svg", link: "https://getbootstrap.com/" },
+  { name: "Vite", imgSrc: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vite-colored.svg", link: "https://vitejs.dev/" },
+  { name: "Flutter", imgSrc: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/flutter-colored.svg", link: "https://flutter.dev/" },
+
+  // Development Tools
+  { name: "Git", imgSrc: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/git-colored.svg", link: "https://git-scm.com/" },
+  { name: "VS Code", imgSrc: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode.svg", link: "https://code.visualstudio.com/" },
+  { name: "Vim", imgSrc: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vim.svg", link: "https://www.vim.org/" },
+  { name: "Sublime Text", imgSrc: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/sublimetext.svg", link: "https://www.sublimetext.com/index2" },
+
+  // Web Technologies
+  { name: "CSS3", imgSrc: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg", link: "https://www.w3.org/TR/CSS/#css" },
+  { name: "Node.js", imgSrc: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg", link: "https://nodejs.org/en/" },
+  { name: "Express.js", imgSrc: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored.svg", link: "https://expressjs.com/" },
+
+  // Databases
+  { name: "MongoDB", imgSrc: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg", link: "https://www.mongodb.com/" },
+  { name: "MySQL", imgSrc: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg", link: "https://www.mysql.com/" },
+
+  // Design Tools
+  { name: "Photoshop", imgSrc: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/photoshop-colored.svg", link: "https://www.adobe.com/uk/products/photoshop.html" },
+  { name: "Figma", imgSrc: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg", link: "https://www.figma.com/" },
+  { name: "Firebase", imgSrc: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/firebase-colored.svg", link: "https://firebase.com/" },
+  { name: "Wix", imgSrc: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/wix-colored.svg", link: "https://wix.com" },
+
+  // Cloud Platforms and Tools
+  { name: "Google Cloud", imgSrc: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/googlecloud-colored.svg", link: "https://cloud.google.com/" },
+
+  // Machine Learning
+  { name: "TensorFlow", imgSrc: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tensorflow-colored.svg", link: "https://www.tensorflow.org/" },
+  { name: "PyTorch", imgSrc: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/pytorch-colored.svg", link: "https://pytorch.org/" },
+
+  // Others
+  { name: "Linux (Basic)", imgSrc: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/linux-colored.svg", link: "https://www.linux.org" }
 ];
 // Define your left and right lists here
 export const leftLists = [
