@@ -1,5 +1,3 @@
-import { StaticImageData } from 'next/image';
-
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
@@ -79,7 +77,7 @@ export const projects = [
     title: "Dall-E 2.0 - AI Image Generation",
     des: "Welcome to Dall-E 2.0, an advanced AI image generation tool inspired by MidJourney and DALL-E. Create stunning images from textual prompts using cutting-edge web technologies and AI.",
     img: "/Dall-e2.0.png",
-    iconLists: ["/ai.svg", "/web.svg", "/js.svg", "/openai.svg", "/design.svg"],
+    // iconLists: ["/ai.svg", "/web.svg", "/js.svg", "/openai.svg", "/design.svg"],
     link: "https://github.com/Anushkatech5/Dall-E-2.0"
 
   },
@@ -88,7 +86,7 @@ export const projects = [
     title: "Ticket-App - Comprehensive Ticketing Solution",
     des: "Ticket-App is a comprehensive ticketing application built with Flutter and Dart. Experience advanced UI design, state management, and seamless navigation with interactive animations and detailed screens including home, search, ticket details, and profile.",
     img: "/ticket_app.png",
-    iconLists: ["/flutter.svg", "/dart.svg", "/getx.svg", "/bloc.svg", "/riverpod.svg"],
+    // iconLists: ["/flutter.svg", "/dart.svg", "/getx.svg", "/bloc.svg", "/riverpod.svg"],
     link: "https://github.com/Anushkatech5/ticket-app",
   },
 
@@ -97,7 +95,7 @@ export const projects = [
     title: "TinDog - Tinder for Pets",
     des: "TinDog is a fun, open-source project deployed on Firebase, designed to be a Tinder-like app for pets. The frontend is complete, and the backend is currently under development, requiring extensive brainstorming and creativity.",
     img: "/tindog.png",
-    iconLists: ["/firebase.svg", "/react.svg", "/tailwind.svg", "/typescript.svg", "/node.svg"],
+    // iconLists: ["/firebase.svg", "/react.svg", "/tailwind.svg", "/typescript.svg", "/node.svg"],
     link: "https://github.com/Anushkatech5/TinDog.github.io"
 
   },
@@ -105,8 +103,8 @@ export const projects = [
     id: 4,
     title: "E-Commerce App - Flutter & Laravel",
     des: "This e-commerce app showcases a complete solution with Flutter for frontend and Laravel for backend. Features include sign-in/sign-up, shopping cart management, local and server cart history, profile management, popular and recommended food pages, order management, address handling, Google Maps integration, and PayPal payment. Built using GetX for state management and routing, this app offers a robust, scalable architecture suitable for various e-commerce applications.",
-    img: "/ecommerce.svg",
-    iconLists: ["/flutter.svg", "/laravel.svg", "/getx.svg", "/paypal.svg", "/googlemaps.svg"],
+    img: "/food.jpg",
+    // iconLists: ["/flutter.svg", "/laravel.svg", "/getx.svg", "/paypal.svg", "/googlemaps.svg"],
     link: "https://github.com/Anushkatech5/food_delivery"
 
   },
@@ -117,31 +115,31 @@ export const experience = [
     quote: "Enhanced support for underprivileged children through design skills for NGOs.",
     name: "iVolunteer",
     title: "Graphic Designer and Website Developer",
-    img: "/ivolunteer.svg" as StaticImageData,  // Replace with the actual image path
+    img: "/ivolunteer.svg",  // Replace with the actual image path
   },
   {
     quote: "Collaborated with universities such as IITs and IIMs for hiring and designed the Android app front-end using Figma. Gained experience in web scraping.",
     name: "TreeandHumanKnot",
     title: "HR and Tech Intern",
-    img: "/treeandhuman.svg" as StaticImageData,  // Replace with the actual image path
+    img: "/treeandhuman.svg",  // Replace with the actual image path
   },
   {
     quote: "Built relationships with participants, set team goals, conducted performance evaluations, and maintained team performance.",
     name: "GoDutch",
     title: "Brand Ambassador and Program Manager",
-    img: "/godutch.svg" as StaticImageData,  // Replace with the actual image path
+    img: "/godutch.svg",  // Replace with the actual image path
   },
   {
     quote: "Participated in the Amazon ML Summer School, gaining hands-on experience with various Machine Learning topics and practical projects.",
     name: "Amazon ML Summer School",
     title: "Mentee",
-    img: "/amazon_ml.svg" as StaticImageData,  // Replace with the actual image path
+    img: "/amazon_ml.svg",  // Replace with the actual image path
   },
   {
     quote: "Developed an understanding of advanced ML concepts and applied them in real-world scenarios during the summer program.",
     name: "Amazon ML Summer School",
     title: "Mentee",
-    img: "/amazon_ml_2.svg" as StaticImageData,  // Replace with the actual image path
+    img: "/amazon_ml_2.svg",  // Replace with the actual image path
   },
 ];
 

@@ -1,7 +1,7 @@
 "use client";
 import { FaLocationArrow } from "react-icons/fa6";
 import { projects } from "@/data";
-import { PinContainer } from "@/components/ui/3d-pin";
+import { PinContainer } from "@/components/ui/PinContainer"; // Ensure this is the correct import path
 
 const RecentProjects: React.FC = () => {
   return (
@@ -18,18 +18,18 @@ const RecentProjects: React.FC = () => {
           >
             <PinContainer
               title={item.title}
-              link={item.link} // Ensure this is a valid URL
+              href={item.link}
             >
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <img src="/bg.png" alt="bgimg" />
+                  <img src="/bg.png" alt="Background" />
                 </div>
                 <img
                   src={item.img}
-                  alt="cover"
+                  alt="Project cover"
                   className="z-10 absolute bottom-0"
                 />
               </div>
@@ -49,20 +49,6 @@ const RecentProjects: React.FC = () => {
               </p>
 
               <div className="flex items-center justify-between mt-7 mb-3">
-                <div className="flex items-center">
-                  {item.iconLists.map((icon, index) => (
-                    <div
-                      key={index}
-                      className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
-                      style={{
-                        transform: `translateX(-${5 * index + 2}px)`,
-                      }}
-                    >
-                      <img src={icon} alt="icon" className="p-2" />
-                    </div>
-                  ))}
-                </div>
-
                 <div className="flex justify-center items-center">
                   <p className="flex lg:text-xl md:text-xs text-sm text-purple">
                     Check Live Site

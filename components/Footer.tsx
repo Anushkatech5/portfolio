@@ -12,35 +12,37 @@ const Footer = () => {
           Ready to take <span className="text-purple">your</span> digital
           presence to the next level?
         </h1>
-        <p className="text-white-100 md:mt-8 my-4 text-center text-sm md:text-base">
+        <p className="text-white-00 md:mt-8 my-4 text-center text-sm md:text-base">
           Reach out to me today and let's discuss how I can help you achieve your goals.
         </p>
-        <a href="mailto:guptaanushka024@gmail.com">
-          <MagicButton
-            title="Let's get in touch"
-            icon={<FaLocationArrow />}
-            position="right"
-          />
-        </a>
+        <div className="flex flex-col items-center">
+          <a href="mailto:guptaanushka024@gmail.com">
+            <MagicButton
+              title="Let's get in touch"
+              icon={<FaLocationArrow />}
+              position="right"
+              otherClasses="text-[10px]" // Explicitly setting font size to 10px
+            />
+          </a>
+          <div className="flex mt-10 gap-8">
+            {socialMedia.map((profile) => (
+              <a
+                key={profile.id}
+                href={profile.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 cursor-pointer flex justify-center items-center saturate-180 bg-opacity-75 bg-black-100 rounded-lg border border-neutral-300"
+              >
+                <img src={profile.img} alt={profile.id} width={24} height={24} />
+              </a>
+            ))}
+          </div>
+        </div>
       </div>
-      <div className="flex mt-14 md:flex-row flex-col justify-between items-center">
-        <p className="md:text-sm text-xs md:font-normal font-light">
+      <div className="w-full flex justify-center">
+        <p className="md:text-sm text-xs md:font-normal font-light text-center">
           Copyright © 2024 Anushka
         </p>
-
-        <div className="flex items-center md:gap-2 gap-4">
-          {socialMedia.map((profile) => (
-            <a
-              key={profile.id}
-              href={profile.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-8 h-8 cursor-pointer flex justify-center items-center saturate-180 bg-opacity-75 bg-black-100 rounded-lg border border-neutral-300"
-            >
-              <img src={profile.img} alt={profile.id} width={16} height={16} />
-            </a>
-          ))}
-        </div>
       </div>
     </footer>
   );

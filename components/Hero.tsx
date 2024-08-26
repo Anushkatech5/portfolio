@@ -26,11 +26,11 @@ const Hero = () => {
 
           <TextGenerateEffect 
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
-            words="Transforming Innovation into Reality"
+            words="Hi, I&apos;m Anushka!"
           />
 
           <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
-            Hi! I&apos;m Anushka, a dedicated AI developer and enthusiast, eager to create impactful technological solutions.
+            A dedicated AI developer and enthusiast, eager to create impactful technological solutions.
           </p>
 
           <a
@@ -39,10 +39,11 @@ const Hero = () => {
   rel="noopener noreferrer"
 >
   <MagicButton
-    title="Show my work"
+    title="My works"
     icon={<FaLocationArrow />}
     position="right"
-    showIconOnHover={true} // Apply hover effect
+    showIconOnHover={true} 
+    style={{ fontSize: '18px' }}
   />
 </a>
 
