@@ -43,7 +43,7 @@ const Hero = () => {
     icon={<FaLocationArrow />}
     position="right"
     showIconOnHover={true} 
-    style={{ fontSize: '18px' }}
+    otherClasses="text-[18px]"
   />
 </a>
 
