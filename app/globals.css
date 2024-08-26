@@ -286,5 +286,78 @@
       border-radius: 10px;
     }
 
+    /* Ensure grid is responsive */
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+/* General grid styles */
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Ensure the pop-up has a minimum width and scrolls when needed */
+.pop-up-container {
+  min-width: 300px;
+  max-height: 80vh; /* Adjust height as needed */
+  overflow-y: auto;
+}
+
+/* Media queries for different screen sizes */
+@media (min-width: 640px) {
+  .sm\:grid-cols-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* Specific adjustments for small screens less than 450px */
+@media (max-width: 450px) {
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Inside your CSS file or as inline styles */
+.popup {
+  min-width: 300px;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+.max-h-80 {
+  max-height: 20rem;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+
   
 }

@@ -64,7 +64,8 @@ export const BentoGridItem = ({
     setCopied(true);
   };
 
-  const handleBoxClick = () => {
+  const handleBoxClick = (e: React.MouseEvent) => {
+    e.stopPropagation(); // Prevent event propagation
     setIsOpen(!isOpen); // Toggle pop-up visibility
   };
 
@@ -127,17 +128,17 @@ export const BentoGridItem = ({
           {id === 2 && <GridGlobe />}
 
           {id === 3 && (
-  <div
-    className="flex gap-1 lg:gap-5 w-fit absolute right-0 lg:right-2 cursor-pointer"
-    onClick={handleBoxClick} // Handle click to open the pop-up
-  >
-    <div className="flex flex-col gap-2 md:gap-3 lg:gap-8">
-      <span className="py-1 px-2 lg:py-2 lg:px-4 rounded-lg text-center bg-[#10132E] text-white text-sm lg:text-base">
-        Click here to see <br />Anushka&apos;s Tech Stack
-      </span>
-    </div>
-  </div>
-)}
+            <div
+              className="flex gap-1 lg:gap-5 w-full cursor-pointer" // Make entire line clickable
+              onClick={handleBoxClick} // Handle click to open the pop-up
+            >
+              <div className="flex flex-col gap-2 md:gap-3 lg:gap-8 w-full">
+                <span className="py-1 px-2 lg:py-2 lg:px-4 rounded-lg text-center bg-[#10132E] text-white text-sm lg:text-base w-full">
+                  Click here to see <br />Anushka&apos;s Tech Stack
+                </span>
+              </div>
+            </div>
+          )}
 
           {id === 6 && (
             <div className="mt-5 relative">
@@ -150,14 +151,13 @@ export const BentoGridItem = ({
               </div>
 
               <MagicButton
-  title={copied ? "Email is Copied!" : "Grab my email"}
-  icon={<IoCopyOutline />}
-  position="left"
-  handleClick={handleCopy}
-  otherClasses="!bg-[#161A31] text-[10px]"
-  showIconOnHover={false} // No hover effects
-/>
-
+                title={copied ? "Email is Copied!" : "Grab my email"}
+                icon={<IoCopyOutline />}
+                position="left"
+                handleClick={handleCopy}
+                otherClasses="!bg-[#161A31] text-[10px]"
+                showIconOnHover={false} // No hover effects
+              />
             </div>
           )}
         </div>
@@ -166,15 +166,15 @@ export const BentoGridItem = ({
       {/* Pop-up Tech Stack Grid */}
       {isOpen && (
         <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 z-50">
-          <div className="relative bg-[#10132E] rounded-lg p-5 w-full max-w-4xl">
+          <div className="relative bg-[#10132E] rounded-lg p-5 w-full max-w-4xl min-w-[300px]">
             <button
               onClick={() => setIsOpen(false)}
               className="absolute top-2 right-2 text-white text-2xl"
             >
               &times;
             </button>
-            <div className="max-h-80 overflow-y-auto">
-              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            <div className="overflow-y-auto max-h-80">
+              <div className="grid grid-cols-2 gap-4 sm:grid-cols-6 md:grid-cols-4 lg:grid-cols-5">
                 {techStack.map((tech, index) => (
                   <div
                     key={index}
