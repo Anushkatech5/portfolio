@@ -9,7 +9,7 @@ const World = dynamic(() => import("./Globe").then((m) => m.World), {
 
 const GridGlobe = () => {
   const globeConfig = {
-    pointSize: 4,
+    pointSize: 2,
     globeColor: "#062056",
     showAtmosphere: true,
     atmosphereColor: "#FFFFFF",
@@ -22,10 +22,10 @@ const GridGlobe = () => {
     directionalLeftLight: "#ffffff",
     directionalTopLight: "#ffffff",
     pointLight: "#ffffff",
-    arcTime: 1000,
-    arcLength: 0.9,
+    arcTime: 1500,
+    arcLength: 0.5,
     rings: 1,
-    maxRings: 3,
+    maxRings: 2,
     initialPosition: { lat: 22.3193, lng: 114.1694 },
     autoRotate: true,
     autoRotateSpeed: 0.5,

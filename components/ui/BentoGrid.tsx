@@ -127,17 +127,18 @@ export const BentoGridItem = ({
           {id === 2 && <GridGlobe />}
 
           {id === 3 && (
-            <div
-              className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2 cursor-pointer"
-              onClick={handleBoxClick} // Handle click to open the pop-up
-            >
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                <span className="lg:py-4 lg:px-3 py-2 px-3 rounded-lg text-center bg-[#10132E]">
-                Click here to see <br />Anushka&apos;s Tech Stack      
-                </span>
-              </div>
-            </div>
-          )}
+  <div
+    className="flex gap-1 lg:gap-5 w-fit absolute right-0 lg:right-2 cursor-pointer"
+    onClick={handleBoxClick} // Handle click to open the pop-up
+  >
+    <div className="flex flex-col gap-2 md:gap-3 lg:gap-8">
+      <span className="py-1 px-2 lg:py-2 lg:px-4 rounded-lg text-center bg-[#10132E] text-white text-sm lg:text-base">
+        Click here to see <br />Anushka&apos;s Tech Stack
+      </span>
+    </div>
+  </div>
+)}
+
           {id === 6 && (
             <div className="mt-5 relative">
               <div
@@ -149,11 +150,11 @@ export const BentoGridItem = ({
               </div>
 
               <MagicButton
-  title={copied ? "Email is Copied!" : "Copy my email address"}
+  title={copied ? "Email is Copied!" : "Grab my email"}
   icon={<IoCopyOutline />}
   position="left"
   handleClick={handleCopy}
-  otherClasses="!bg-[#161A31]"
+  otherClasses="!bg-[#161A31] text-[10px]"
   showIconOnHover={false} // No hover effects
 />
 
