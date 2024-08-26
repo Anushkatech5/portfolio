@@ -1,9 +1,16 @@
 "use client";
+import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
 import "./globals.css";
 import { ThemeProvider } from "./provider";
+import { title } from "process";
+
+const inter = Inter({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: "Anushka's Portfolio",
+  description: "Aritificial Intelligence Developer"
+}
 export default function RootLayout({
   children,
 }: {
