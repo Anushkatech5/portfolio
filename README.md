@@ -1,6 +1,6 @@
 # Modern Next.js Portfolio
 
-Welcome to my portfolio, built with Next.js, Three.js, Framer Motion, and TailwindCSS. This project is designed to showcase my skills and experience in a visually engaging and professional manner.
+Welcome to my portfolio, built with Next.js, Three.js, Framer Motion, and TailwindCSS. This site highlights my skills and projects through a dynamic and interactive design.
 
 ## 🌐 Live Deployment
 
