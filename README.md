@@ -1,6 +1,10 @@
 # Modern Next.js Portfolio
 
-Welcome to my portfolio, built with cutting-edge technologies like Next.js, Three.js, Framer Motion, and TailwindCSS. This project is designed to present my skills and experience in a professional and visually engaging manner.
+Welcome to my portfolio, built with Next.js, Three.js, Framer Motion, and TailwindCSS. This project is designed to showcase my skills and experience in a visually engaging and professional manner.
+
+## 🌐 Live Deployment
+
+The portfolio is deployed and can be viewed online at [https://anushka-ai.vercel.app/](https://anushka-ai.vercel.app/).
 
 ## 🚀 Getting Started
 
@@ -44,25 +48,25 @@ Visit [http://localhost:3000](http://localhost:3000) in your browser to view the
 
 This portfolio is powered by:
 
-- **Next.js**: Enables server-side rendering and static site generation for fast, optimized performance.
-- **Three.js**: Renders 3D graphics for an interactive experience.
-- **Framer Motion**: Provides smooth animations and transitions.
-- **Tailwind CSS**: Ensures responsive and customizable styling.
+- **Next.js**: Framework for server-side rendering and static site generation.
+- **Three.js**: Library for creating interactive 3D graphics.
+- **Framer Motion**: Tool for advanced animations and transitions.
+- **Tailwind CSS**: Utility-first CSS framework for responsive design.
 
 ## 🌟 Key Features
 
-- **Hero Section**: A dynamic introduction with eye-catching effects.
-- **Bento Grid**: Clean layout to showcase personal information.
-- **3D Elements**: Interactive components like an animated globe.
-- **Testimonials**: Highlighting feedback with smooth scrolling animations.
-- **Work Experience**: Detailed, engaging display of my professional background.
-- **Responsiveness**: Optimized for all devices, ensuring a seamless experience across different screen sizes.
+- **Hero Section**: Dynamic introduction with engaging visual effects.
+- **Bento Grid**: Sleek layout for presenting personal information.
+- **3D Elements**: Interactive components such as an animated globe.
+- **Testimonials**: Animated scrolling feedback from clients and colleagues.
+- **Work Experience**: Detailed display of professional achievements.
+- **Responsiveness**: Fully optimized for various devices and screen sizes.
 
 ## 📄 Learn More
 
-For further information on the technologies used, explore these resources:
+For more information on the technologies used, refer to these resources:
 
-- **[Next.js Documentation](https://nextjs.org/docs)**: Learn more about Next.js.
-- **[Three.js Documentation](https://threejs.org/docs/)**: Explore 3D graphics with Three.js.
-- **[Framer Motion Documentation](https://www.framer.com/motion/)**: Discover animation possibilities with Framer Motion.
-- **[Tailwind CSS Documentation](https://tailwindcss.com/docs)**: Efficient styling with Tailwind CSS.
+- **[Next.js Documentation](https://nextjs.org/docs)**: Comprehensive guide to Next.js.
+- **[Three.js Documentation](https://threejs.org/docs/)**: Learn about 3D graphics with Three.js.
+- **[Framer Motion Documentation](https://www.framer.com/motion/)**: Explore animation techniques with Framer Motion.
+- **[Tailwind CSS Documentation](https://tailwindcss.com/docs)**: Get familiar with Tailwind CSS for styling.
