@@ -31,7 +31,7 @@ export const experience = [
     buttonText: "View Certificate",
   },
   {
-    title: "go dutch - Brand Ambassador and Program Manager",
+    title: "goDutch - Brand Ambassador and Program Manager",
     description:
       "Built relationships and set goals for teams while managing various program tasks. Ensured successful execution and high performance across initiatives.",
     imageSrc: "/go.png",

@@ -9,7 +9,7 @@ export function TimelineDemo() {
       content: (
         <div>
         <p className="text-neutral-800 dark:text-neutral-200 text-base md:text-lg lg:text-l xl:text-xl font-normal mb-8">
-          <strong className="text-xl md:text-2xl lg:text-3xl xl:text-4xl">Banasthali Vidyapith University</strong>
+          <strong className="text-xl md:text-2xl lg:text-3xl xl:text-4xl">Banasthali Vidyapith University, Rajasthan</strong>
           <br />
           <br />
           Currently pursuing a Bachelor of Technology in Computer Science with a specialization in Artificial Intelligence.
