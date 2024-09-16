@@ -42,10 +42,12 @@ export const FloatingNav: React.FC<FloatingNavProps> = ({ navItems, className })
         transition={{ duration: 0.2 }}
         className={cn(
           "fixed z-[5000] top-10 px-4 py-5 rounded-lg border border-black/.1 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] flex items-center space-x-4",
-          "w-full md:w-fit",
-          "md:mx-auto md:justify-center md:relative md:max-w-[90%]",
+          "w-full max-w-[90%] mx-auto", // Ensure the navigation is centered and constrained in width
+          "md:w-fit", // For medium devices and up, fit content width
+          "md:relative md:justify-center", // Center the content on medium devices and up
           className
         )}
+        
         style={{
           backdropFilter: "blur(16px) saturate(180%)",
           backgroundColor: "rgba(17, 25, 40, 0.75)",
@@ -88,37 +90,39 @@ export const FloatingNav: React.FC<FloatingNavProps> = ({ navItems, className })
             className="p-2"
             style={{ position: "relative" }}
           >
-            <FiMenu className="text-white" />
+            <FiMenu className="text-white" style={{ fontSize: '1.5rem' }}/>
           </button>
           {menuOpen && (
             <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.2 }}
-              className="absolute right-0 top-full mt-2 w-48 bg-white rounded-lg shadow-lg z-[5000]"
-            >
-              {navItems.map((navItem, idx) => (
-                navItem.external ? (
-                  <a
-                    key={`link-${idx}`}
-                    href={navItem.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block px-4 py-2 text-neutral-700 hover:bg-neutral-100"
-                  >
-                    {navItem.name}
-                  </a>
-                ) : (
-                  <Link
-                    key={`link-${idx}`}
-                    href={navItem.link || ""}
-                    className="block px-4 py-2 text-neutral-700 hover:bg-neutral-100"
-                  >
-                    {navItem.name}
-                  </Link>
-                )
-              ))}
-            </motion.div>
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.2 }}
+            className="absolute right-0 top-full mt-2 w-48 rounded-lg shadow-lg z-[5000] flex flex-col items-center"
+            style={{ backgroundColor: 'rgba(80, 80, 80, 0.9)', paddingRight: '16px' }}
+          >
+            {navItems.map((navItem, idx) => (
+              navItem.external ? (
+                <a
+                  key={`link-${idx}`}
+                  href={navItem.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block px-4 py-2 text-neutral-100 hover:bg-neutral-700 text-center"
+                >
+                  {navItem.name}
+                </a>
+              ) : (
+                <Link
+                  key={`link-${idx}`}
+                  href={navItem.link || ""}
+                  className="block px-4 py-2 text-neutral-100 hover:bg-neutral-700 text-center"
+                >
+                  {navItem.name}
+                </Link>
+              )
+            ))}
+          </motion.div>
+          
           )}
         </div>
       </motion.div>
